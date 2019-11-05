@@ -76,6 +76,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bodega.BL\Bodega.BL.csproj">
+      <Project>{6fe0b7b9-c5f9-483d-bcc6-c9802e40d863}</Project>
+      <Name>Bodega.BL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

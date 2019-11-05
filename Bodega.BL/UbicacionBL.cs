@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Bodega.BL
 {
-    class UbicacionBL
+    public class UbicacionBL
     {
+        public List<Ubicacion> ListadeUbicaciones { get; set; }
+
+        public UbicacionBL()
+        {
+            ListadeUbicaciones = new List<Ubicacion>();
+        }
+
+        public void Nueva(Ubicacion ubicacion)
+        {
+            ListadeUbicaciones.Add(ubicacion);
+        }
     }
 }
+
